@@ -1,0 +1,131 @@
+Project Title: Romantic Photo Gallery with Glassmorphism UI
+Project Description:
+Create a modern, minimalistic photo gallery website with glassmorphism design to showcase couple's date photos with personal descriptions. The site should have a clean, elegant interface with smooth animations and interactive elements.
+Technical Requirements:
+Frontend (HTML/CSS/JavaScript):
+
+Responsive design that works on desktop, tablet, and mobile
+Glassmorphism UI with frosted glass effects, subtle shadows, and blur backgrounds
+Minimalistic layout with plenty of white space
+Smooth CSS transitions and animations
+Modern typography (use Google Fonts like Poppins or Inter)
+
+Backend (Node.js/Express or Python/Flask):
+
+Simple backend to serve images and descriptions
+JSON configuration file to store image URLs and descriptions
+API endpoints to fetch gallery data
+
+Key Features:
+
+Admin Interface (Backend):
+
+Simple form/configuration where you can input:
+
+Image URL (from cloud storage like Cloudinary, AWS S3, or Google Drive)
+Personal description/feelings for each photo
+Date of the photo (optional)
+
+
+Save data to JSON file or simple database
+
+
+Gallery Display (Frontend):
+
+Full-screen image viewer with glassmorphism container
+Images should be responsive and maintain aspect ratio
+Smooth fade transitions between photos
+Loading states for images
+
+
+Navigation:
+
+Previous/Next buttons with glassmorphism styling
+Keyboard arrow key support
+Image counter (e.g., "3 of 15")
+Optional thumbnail strip at bottom
+
+
+Description Feature:
+
+"Click here" button below each image with glassmorphism effect
+Smooth slide-up animation revealing description text
+Description container with semi-transparent background
+Close button to hide description
+Ensure text has sufficient contrast (dark text on light glass or vice versa)
+
+
+
+Design Specifications:
+Glassmorphism Elements:
+
+Background: Semi-transparent containers with backdrop-filter: blur()
+Colors: Use rgba() values with low opacity (0.1-0.3)
+Borders: Subtle 1px borders with low opacity white/light colors
+Box shadows: Soft, multiple layered shadows
+Border radius: 15-20px for rounded corners
+
+Color Palette:
+
+Primary: Light pastels or neutral tones
+Background: Gradient or solid color that complements photos
+Text: High contrast for readability (#333 or white depending on background)
+Accent: Soft pink, purple, or blue for interactive elements
+
+Typography:
+
+Primary font: Clean, modern sans-serif
+Font weights: 300 (light), 400 (regular), 600 (semi-bold)
+Proper line spacing and letter spacing for readability
+
+User Experience:
+
+Smooth loading animations
+Hover effects on interactive elements
+Mobile-friendly touch gestures
+Accessible design with proper alt tags and ARIA labels
+
+File Structure:
+project/
+├── backend/
+│   ├── server.js (or app.py)
+│   ├── data/
+│   │   └── gallery.json
+│   └── routes/
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── app.js
+│   └── assets/
+└── README.md
+Functionality Checklist:
+
+ Image loading from URLs
+ Smooth navigation between photos
+ Slide-up description animation
+ Responsive design
+ Glassmorphism styling
+ Loading states
+ Error handling for missing images
+ Keyboard navigation
+ Mobile touch support
+
+Additional Features (Optional):
+
+Photo upload functionality instead of just URLs
+Like/favorite system
+Date display
+Search/filter functionality
+Social sharing buttons
+Fullscreen mode
+Zoom functionality
+
+Deployment:
+
+Set up for easy deployment on platforms like Vercel, Netlify, or Heroku
+Environment variables for sensitive data
+Optimization for loading speed
+
+Note: Ensure all text maintains proper contrast ratios for accessibility while preserving the glassmorphism aesthetic. Use CSS text-shadow or background overlays if needed to improve readability.
